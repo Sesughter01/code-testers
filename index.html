@@ -19,9 +19,11 @@
 
     <title>Testers | Home</title>
     <style>
-        body{
-            background-color: #D4F4FF;
-        }
+       body{
+    background-color: #D4F4FF;
+    font-family:Poppins;
+}
+       
         #nav-div-1{
             list-style: none;
         }
@@ -52,57 +54,58 @@
      font-weight: 400;
  }
  
-        @media (max-width: 1200px){
+    
+ @media (min-width: 1200px){
             
         }
-        @media (max-width: 992px){
+        @media (min-width: 992px){
            
         }
-        @media (max-width: 768px){
+        @media (min-width: 768px){
             /* flex-direction: row; */
-            div.my-img{
-                position: absolute;
-                right:100px;
-            }
+            
 
         }
-    
     @media (min-width:576px){
-            #mobile-header-1 {
+            /* #mobile-header-1 {
                 display: flex;
                 flex-direction: row;
                 
 
-        }
-        section.my-section > div{
-                    /* background-image: url(./imgs-2/female-doc.png); */
-                     position: absolute;
+        } */
+        section.container-fluid > div {
+                    
+                     position: absolute; 
                      top: 60px;
-                     
-                     right: 0px; 
+                     /* max-width: 100%; */
+                     right: 285px;  
                      
                  } 
-        section.my-section .container  {
+        section.container-fluid > div img {
+                   width:150%;
+                     
+                 } 
+        section.container-fluid .container .btn-group {
                      position: absolute;
-                     top: 350px;
+                     top: 280px;
                   
-                     left:-20px;
+                     left:5px;
                      /* padding:30px; */
                      /* margin: auto; */
                  } 
-        section.my-section .container  h2{
+        section.container-fluid .container  h2{
                      position: absolute;
-                     top: 50px;
+                     top: 200px;
                   
-                     left:15px;
+                     left:5px;
                      /* padding:30px; */
                      /* margin: auto; */
                  } 
-        section.my-section .container  p{
+        section.container-fluid .container p{
                      position: absolute;
-                     top: -100px;
+                     top: 220px;
                   
-                     left:20px;
+                     left:5px;
                      /* padding:30px; */
                      /* margin: auto; */
                  } 
@@ -115,6 +118,18 @@
             }
       
     }
+    
+    @media (max-width: 1200px){
+            
+        }
+        @media (max-width: 992px){
+           
+        }
+        @media (max-width: 768px){
+            /* flex-direction: row; */
+            
+
+        }
          @media (max-width: 576px){
             .mobile-button{
                 position: absolute;
@@ -128,6 +143,7 @@
                     border: none;
                     outline: none;
                     border-radius: 8px;
+                    font-size: 0.8em;
                 }
                 .mobile-header a.navbar-brand{
                     position: absolute;
@@ -148,7 +164,7 @@
                        margin: auto;
                    }
 
-                  section.my-section{
+                  section.container-fluid{
                      position: absolute;
                      top: 60px;
                      min-width: 280px;
@@ -158,7 +174,7 @@
                      right: auto; */
                      /* margin: auto; */
                  } 
-                  section.my-section img{
+                  section.container-fluid img{
                     width: 100%;
                     
                  } 
@@ -217,7 +233,7 @@
                                     </ul>
                             </div>
                        <!-- </div> -->
-                       <button class="mobile-button ">Sign up</button>
+                       <button class=" btn btn-lg mobile-button custom-btn-bg ">Sign up</button>
                     </div>
                 
            </nav>
@@ -229,9 +245,9 @@
 
           </div>
            <div class="container ">
-               <div class="row">
+               <!-- <div class="row"> -->
 
-                   <div class="btn-group bg-white btn-grp-dims col-12 col-md-5 m-2 py-2">
+                   <div class="btn-group bg-white btn-grp-dims col-12 col-md-5 ml-0 mt-lg-2 py-2">
                        <!-- <button type="button" class="btn btn-sm custom-btn-bg-light dropdown-toggle dropdown-toggle-split" data-target="dropdown">Location</button> -->
                        <button type="button" class="btn btn-sm  custom-btn-bg-light dropdown-toggle dropdown-toggle-split">Location</button>
        
@@ -244,9 +260,9 @@
                        <button class="btn btn-sm custom-btn-bg ml-2">Search</button>
                    </div>
        
-                      <h2>Heading </h2>
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, porro.</p>
-               </div>
+                      <h2 >Heading </h2>
+                      <p class="mt-lg-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, porro.</p>
+               <!-- </div> -->
            </div>
         
        </section>
