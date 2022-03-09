@@ -19,40 +19,33 @@
 
     <title>Testers | Home</title>
     <style>
+      
+      /* General Styles */
+
        body{
-    background-color: #D4F4FF;
-    font-family:Poppins;
-}
+           /* max-width: 100vw; */
+            background-color: #D4F4FF;
+            font-family:Poppins;
+       }
        
         #nav-div-1{
             list-style: none;
         }
-        button#navbar-toggler{
-          /* margin: 0; */
-          /* padding: 0; */
-          /* align-content: center; */
-        }
-        span.navbar-toggler-icon{
-            
-            
-        }
-        .my-section{
-            /* background-color: #D4F4FF; */
-            z-index: 0;
+        
+        .custom-btn-bg {
+         background-color: midnightblue;
+         color: #fff;
+          }
+ 
+       .custom-btn-bg-light{
+     
+            background-color: #D4F4FF;
+            color: #000;
+            font-weight: 400;
         }
 
      /* Media Queries */
-     .custom-btn-bg {
-         background-color: midnightblue;
-         color: #fff;
- }
- 
- .custom-btn-bg-light{
      
-     background-color: #D4F4FF;
-     color: #000;
-     font-weight: 400;
- }
  
     
  @media (min-width: 1200px){
@@ -63,52 +56,21 @@
         }
         @media (min-width: 768px){
             /* flex-direction: row; */
-            
+           
+       
+        
 
         }
     @media (min-width:576px){
-            /* #mobile-header-1 {
-                display: flex;
-                flex-direction: row;
-                
-
-        } */
-        section.container-fluid > div {
+           
+        .mobile-button{
                     
-                     position: absolute; 
-                     top: 60px;
-                     /* max-width: 100%; */
-                     right: 285px;  
-                     
-                 } 
-        section.container-fluid > div img {
-                   width:150%;
-                     
-                 } 
-        section.container-fluid .container .btn-group {
-                     position: absolute;
-                     top: 280px;
-                  
-                     left:5px;
-                     /* padding:30px; */
-                     /* margin: auto; */
-                 } 
-        section.container-fluid .container  h2{
-                     position: absolute;
-                     top: 200px;
-                  
-                     left:5px;
-                     /* padding:30px; */
-                     /* margin: auto; */
-                 } 
-        section.container-fluid .container p{
-                     position: absolute;
-                     top: 220px;
-                  
-                     left:5px;
-                     /* padding:30px; */
-                     /* margin: auto; */
-                 } 
+                   
+                    font-size: .9em;
+                }
+       
+        
+      
 
 
             div.btn-grp-dims{
@@ -132,11 +94,9 @@
         }
          @media (max-width: 576px){
             .mobile-button{
-                position: absolute;
-                    top:24px;
-                    right:16px;
-                    width: 72px;
-                    height: 72px;
+                    /* margin-top: 16px; */
+                    width: 64px;
+                    height: 64px;
                     color: #fff;
                     background-color: midnightblue;
                     padding: 5px;
@@ -145,95 +105,74 @@
                     border-radius: 8px;
                     font-size: 0.8em;
                 }
-                .mobile-header a.navbar-brand{
-                    position: absolute;
-                    top: 24px;
-                    left:16px;
-                    
-
-                   }
-                .mobile-header button.navbar-toggler{
-                    position: absolute;
-                    top: 70px;
-                    left:15px;
-                    
-
-                   }
-                .mobile-header {
-                       width:350px ;
-                       margin: auto;
-                   }
-
-                  section.container-fluid{
-                     position: absolute;
-                     top: 60px;
-                     min-width: 280px;
-                     height: 587px;
-                     text-align: center;
-                     /* left: auto;
-                     right: auto; */
-                     /* margin: auto; */
-                 } 
-                  section.container-fluid img{
+                section.container-fluid img{
                     width: 100%;
                     
                  } 
 
 
+                   }
+                
+                 
 
 
-/* 
-                    div.my-container > img{
-                        position: absolute;
-                        top: 44px;
-                        left: 0;
-                        max-width:100% ;
-                        max-height: 100%;
-                        display:inline-block ;
-                        vertical-align: top;
-                        /* text-align: center; */
-            
 
-                              /* } */
-                    /* .trick{
-                        display:inline-block ;
-                        vertical-align: top;
-                        height: 587px;
-                    }  */
-        }
+                  
+        
         @media (max-width: 480px){
 
+        }
+        @media (max-width: 280px){
+            .mobile-button{
+                    
+                    width: 64px;
+                    height: 64px;
+                    color: #fff;
+                    background-color: midnightblue;
+                    padding: 5px;
+                    border: none;
+                    outline: none;
+                    border-radius: 8px;
+                    font-size: 0.7em;
+                }
         }
 
 
     </style>
 </head>
 <body>
-    <div class="container " >
+    <div class="container" >
        <!-- <div class="container-fluid bg-primary p-2" id="nav-div-1"> -->
 
-           <nav class="navbar navbar-expand-md navbar-light text-primary ">
-              <div class="container-fluid mobile-header">
+           <nav class="navbar navbar-expand-md navbar-light justify-content-end text-primary mt-2 ">
+              <div class="container-fluid justify-content-center">
                 
-                      
-                        <a class="navbar-brand" href="#" >
-                            <img src="./imgs-2/MedicHub.png" alt="logo"> 
-                        </a>
-                            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#nav-list" style="width: 30px;">
-                                <span class="navbar-toggler-icon "></span>
-                            </button>
-                            <div class=" collapse  navbar-collapse " id="nav-list">
-                                    <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active"> <a  class="nav-link" href="#"> home</a></li>
-                                        <li class="nav-item "> <a  class="nav-link" href="#"> Services</a></li>
-                                        <li class="nav-item "> <a  class="nav-link" href="#"> Doctors</a></li>
-                                        <li class="nav-item "> <a  class="nav-link" href="#"> About</a></li>
-                                        <li class="nav-item "> <a  class="nav-link" href="#"> Login</a></li>
-                                    
-                                    </ul>
-                            </div>
+                      <div class="row justify-content-between col-12 px-0">
+                             <div class=" col-3 pl-0">
+
+                                    <a class="navbar-brand " href="#" >
+                                        <img src="./imgs-2/MedicHub.png" alt="logo"> 
+                                    </a>
+                                 <button class="navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#nav-list" style="width: 30px;">
+                                     <span class="navbar-toggler-icon "></span>
+                                 </button>
+                             </div>
+                             <div class="  collapse  navbar-collapse  " id="nav-list">
+                                        <ul class="navbar-nav ml-auto ">
+                                            <li class="nav-item active"> <a  class="nav-link" href="#"> home</a></li>
+                                            <li class="nav-item "> <a  class="nav-link" href="#"> Services</a></li>
+                                            <li class="nav-item "> <a  class="nav-link" href="#"> Doctors</a></li>
+                                            <li class="nav-item "> <a  class="nav-link" href="#"> About</a></li>
+                                            <li class="nav-item "> <a  class="nav-link" href="#"> Login</a></li>
+                                        
+                                        </ul>
+                             </div>
+                        <div class="col-3 col-sm-2 col-md-2 col-lg-2 ml-lg-0 order-12 mr-0 pr-0   text-right text-sm-right text-md-right  ">
+                            <button class=" btn btn-lg mobile-button custom-btn-bg ">Sign up</button>
+
+                        </div>
+                      </div>
                        <!-- </div> -->
-                       <button class=" btn btn-lg mobile-button custom-btn-bg ">Sign up</button>
                     </div>
                 
            </nav>
