@@ -31,6 +31,9 @@
         #nav-div-1{
             list-style: none;
         }
+        #nav-list li a:hover{
+            color: tomato !important;
+        }
         
         .custom-btn-bg {
          background-color: midnightblue;
@@ -43,6 +46,12 @@
             color: #000;
             font-weight: 400;
         }
+       #img-container{
+           top: 0;
+       }
+       #signup:hover{
+           color: aquamarine !important;
+       }
 
      /* Media Queries */
      
@@ -62,7 +71,7 @@
         @media (min-width: 768px){
             /* flex-direction: row; */
            
-       
+            
         
 
         }
@@ -77,20 +86,29 @@
        
         
                 section.container-fluid img{
-                    width: 120%;
+                    width: 110%;
                     
                  } 
 
 
-            div.btn-grp-dims{
+            /* div.btn-grp-dims{
                 /* min-width: 343px; */
                 
-                background-color: #fff;
-            }
+                /* background-color: #fff; */
+            /* } */ 
             .small{
                       display: none;
                   }
-      
+              
+                  .show-class{
+                    display: none ;
+                }
+                .hide-class h2{
+                    font-size: 2rem;
+                }
+                #text-content{
+                    top:200px;
+                }
     }
     
     @media (max-width: 1200px){
@@ -122,10 +140,20 @@
                     width: 100%;
                     
                  } 
+                
                   .bg{
                       display: none;
                   }
-
+                  .-class{
+                    display: none;
+                }
+                .hide-class{
+                    display: none;
+                }
+                .show-class h2{
+                      font-size: 1.5rem;
+                 }
+                  
                    }
                 
                  
@@ -154,7 +182,15 @@
                 .bg{
                     display: none;
                 }
-                
+                .hide-class{
+                    display: none;
+                }
+                .btn-grp-dims{
+                    width: 280px;
+                }
+                 .show-class h2{
+                      font-size: 1.5rem ;
+                 }
         }
 
 
@@ -188,7 +224,7 @@
                                         </ul>
                              </div>
                         <div class="col-3 col-sm-2 col-md-2 col-lg-2 ml-lg-0 order-12 mr-0 pr-0   text-right text-sm-right text-md-right  ">
-                            <button class=" btn btn-lg mobile-button custom-btn-bg ">Sign up</button>
+                            <button class=" btn btn-lg mobile-button custom-btn-bg " id="signup">Sign up</button>
 
                         </div>
                       </div>
@@ -200,31 +236,40 @@
        <!-- Section-1 -->
        <section class=" container-fluid ">
           <div class="row justify-content-between" >
-              <div class="col-12 col-sm-6 col-md-6 order-sm-12 order-md-12 mt-0 ">
+              <div class="col-12 col-sm-6 col-md-6 order-sm-12 order-md-12 mt-0 " id="img-container">
                   <img class="bg" id="mobile-img" src="./imgs-2/female-doc.png" alt="female-doc" >
                   <img class="small" id="mobile-img" src="./imgs-2/female-doc-long.png" alt="female-doc" >
 
               </div>
 
-              <div class="col-12 col-12 col-sm-6 col-md-6 order-sm-1 order-md-1 ">
+              <div class="col-12 col-12 col-sm-6 col-md-6 order-sm-1 order-md-1 mt-lg-5" id="text-content">
                   <!-- <div class="row"> -->
-   
-                      <div class="btn-group bg-white btn-grp-dims col-12 col-md-6 ml-0 mt-lg-2 py-2">
+                    <div class="hide-class">
+
+                        <h2 class="order-lg-1 h4"> Consult the best doctors <br> anytime and anywhere </h2>
+                        <p class="mt-lg-2 order-lg-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, porro.</p>
+                 <!-- </div> -->
+                    </div>
+                      <div class="btn-group bg-white btn-grp-dims col-12 py-2 py-lg-2 rounded-lg">
                           <!-- <button type="button" class="btn btn-sm custom-btn-bg-light dropdown-toggle dropdown-toggle-split" data-target="dropdown">Location</button> -->
-                          <button type="button" class="btn btn-sm  custom-btn-bg-light dropdown-toggle dropdown-toggle-split">Location</button>
+                          <button type="button" class="btn btn-sm p-lg-2 custom-btn-bg-light dropdown-toggle dropdown-toggle-split rounded">Location</button>
           
-                          <button type="button" class="btn btn-sm ml-2 custom-btn-bg-light dropdown-toggle dropdown-toggle-split " data-toggle="dropdown">Specialist
+                          <button type="button" class="btn btn-sm p-lg-2 ml-2 custom-btn-bg-light dropdown-toggle dropdown-toggle-split rounded" data-toggle="dropdown">Specialist
                           </button>
+                          <button type="button" class="btn btn-sm p-lg-2 ml-2 custom-btn-bg rounded" data-toggle="dropdown">Search</button>
+                          
                           <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Link 1</a>
                                 <a class="dropdown-item" href="#">Link 2</a>
                           </div>
-                          <button class="btn btn-sm custom-btn-bg ml-2">Search</button>
+                          <!-- <button class="btn btn-sm  custom-btn-bg dropdown-toggle-split rounded">Search</button> -->
                       </div>
-          
-                         <h2 > </h2>
-                         <p class="mt-lg-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, porro.</p>
-                  <!-- </div> -->
+                        <div class="show-class">
+
+                            <h2 class="order-lg-1  text-center" > Consult the best doctors <br> anytime and anywhere </h2>
+                            <p class="mt-lg-2 order-lg-1 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, porro.</p>
+                     <!-- </div> -->
+                        </div>
               </div>
           </div>
         
