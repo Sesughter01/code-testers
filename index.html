@@ -53,6 +53,11 @@
         }
         @media (min-width: 992px){
            
+            .custom-btn-bg {
+                background-color: midnightblue;
+                color: #fff;
+                width: 124px;
+          }
         }
         @media (min-width: 768px){
             /* flex-direction: row; */
@@ -67,10 +72,14 @@
                     
                    
                     font-size: .9em;
+                    box-shadow: 2px 2px 8px  #101010;
                 }
        
         
-      
+                section.container-fluid img{
+                    width: 120%;
+                    
+                 } 
 
 
             div.btn-grp-dims{
@@ -78,6 +87,9 @@
                 
                 background-color: #fff;
             }
+            .small{
+                      display: none;
+                  }
       
     }
     
@@ -104,12 +116,15 @@
                     outline: none;
                     border-radius: 8px;
                     font-size: 0.8em;
+                    box-shadow: 2px 1px 8px  #101010;
                 }
                 section.container-fluid img{
                     width: 100%;
                     
                  } 
-
+                  .bg{
+                      display: none;
+                  }
 
                    }
                 
@@ -134,7 +149,12 @@
                     outline: none;
                     border-radius: 8px;
                     font-size: 0.7em;
+                    box-shadow: 1px 1px 7px  #505050;
                 }
+                .bg{
+                    display: none;
+                }
+                
         }
 
 
@@ -145,9 +165,9 @@
        <!-- <div class="container-fluid bg-primary p-2" id="nav-div-1"> -->
 
            <nav class="navbar navbar-expand-md navbar-light justify-content-end text-primary mt-2 ">
-              <div class="container-fluid justify-content-center">
+              <div class="container-fluid justify-content-center mt-2">
                 
-                      <div class="row justify-content-between col-12 px-0">
+                      <div class="row justify-content-between col-12 px-0 mt-0">
                              <div class=" col-3 pl-0">
 
                                     <a class="navbar-brand " href="#" >
@@ -179,30 +199,34 @@
       
        <!-- Section-1 -->
        <section class=" container-fluid ">
-          <div class="col-fill-right" >
-              <img id="mobile-img" src="./imgs-2/female-doc-long.png" alt="female-doc" >
+          <div class="row justify-content-between" >
+              <div class="col-12 col-sm-6 col-md-6 order-sm-12 order-md-12 mt-0 ">
+                  <img class="bg" id="mobile-img" src="./imgs-2/female-doc.png" alt="female-doc" >
+                  <img class="small" id="mobile-img" src="./imgs-2/female-doc-long.png" alt="female-doc" >
 
+              </div>
+
+              <div class="col-12 col-12 col-sm-6 col-md-6 order-sm-1 order-md-1 ">
+                  <!-- <div class="row"> -->
+   
+                      <div class="btn-group bg-white btn-grp-dims col-12 col-md-6 ml-0 mt-lg-2 py-2">
+                          <!-- <button type="button" class="btn btn-sm custom-btn-bg-light dropdown-toggle dropdown-toggle-split" data-target="dropdown">Location</button> -->
+                          <button type="button" class="btn btn-sm  custom-btn-bg-light dropdown-toggle dropdown-toggle-split">Location</button>
+          
+                          <button type="button" class="btn btn-sm ml-2 custom-btn-bg-light dropdown-toggle dropdown-toggle-split " data-toggle="dropdown">Specialist
+                          </button>
+                          <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                          </div>
+                          <button class="btn btn-sm custom-btn-bg ml-2">Search</button>
+                      </div>
+          
+                         <h2 > </h2>
+                         <p class="mt-lg-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, porro.</p>
+                  <!-- </div> -->
+              </div>
           </div>
-           <div class="container ">
-               <!-- <div class="row"> -->
-
-                   <div class="btn-group bg-white btn-grp-dims col-12 col-md-5 ml-0 mt-lg-2 py-2">
-                       <!-- <button type="button" class="btn btn-sm custom-btn-bg-light dropdown-toggle dropdown-toggle-split" data-target="dropdown">Location</button> -->
-                       <button type="button" class="btn btn-sm  custom-btn-bg-light dropdown-toggle dropdown-toggle-split">Location</button>
-       
-                       <button type="button" class="btn btn-sm ml-2 custom-btn-bg-light dropdown-toggle dropdown-toggle-split " data-toggle="dropdown">Specialist
-                       </button>
-                       <div class="dropdown-menu">
-                       <a class="dropdown-item" href="#">Link 1</a>
-                       <a class="dropdown-item" href="#">Link 2</a>
-                       </div>
-                       <button class="btn btn-sm custom-btn-bg ml-2">Search</button>
-                   </div>
-       
-                      <h2 >Heading </h2>
-                      <p class="mt-lg-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, porro.</p>
-               <!-- </div> -->
-           </div>
         
        </section>
     </div>
